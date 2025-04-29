@@ -71,10 +71,10 @@ Table 'users': 2 records. Columns include userid and password. See image below.
 **Login**: This is the default page when users start the app. Only authenticated users (with matched userid and password in the database) can visit medical data. This login authentication is a module in Codelgniter framework that utilizes session library to track user activities. The login part is done by accepting user data in the view, sending data to controller via POST, controller passing data to model, model checking if records match, model sending results back to controller and views redirecting to target page. In the mean time, by loading session library, it automatically checks the user status (check if user info exists in a session). See images below.
 
 .. image:: img/login_page.png
-:width: 500
+
 
 .. image:: img/login_success.png
-:width:500
+
 
 **CRUD**: The tables display real-time data fetched from database. With AJAX, users can create new records by inputting information in the bottom, then clicking on add button without reloading the whole page. To delete a record, similarly,users only need to click on the delete button on each row. See images below.
 
