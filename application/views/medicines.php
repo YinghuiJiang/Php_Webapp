@@ -98,7 +98,7 @@ $(document).ready(function(){
       dataType:"JSON",
       success:function(data){
         var html = '<tr class="text-center">';
-        
+        //printing data to table
         for(var count = 0; count < data.length; count++)
         {
           html += '<tr class="text-center">';
@@ -108,7 +108,7 @@ $(document).ready(function(){
           html += '<td class="table_data" data-row_id="'+data[count].id+'" data-column_name="infant_safety" contenteditable>'+data[count].infant_safety+'</td>';
           html += '<td><button type="button" name="delete_btn" id="'+data[count].med_ID+'" class="btn  btn_delete" ><span class="glyphicon glyphicon-remove"></span></button></td></tr>';
         }
-
+        //adding input fields on the bottom row to table
         html += '<td id="id" contenteditable"></td>';
         html += '<td id="frequency" contenteditable placeholder="Enter frequency"></td>';
         html += '<td id="intake_time" contenteditable placeholder="Enter intake_time"></td>';
@@ -120,18 +120,30 @@ $(document).ready(function(){
   }
 
   load_data();
-
+// adding new record to table on click
   $(document).on('click', '#btn_add', function(){
     
     var frequency = $('#frequency').text();
     var intake_time = $('#intake_time').text();
     var infant_safety = $('#infant_safety').text();
-   
+   //check if input fields are empty
     if(frequency == '')
     {
       alert('Enter frequency');
       return false;
     }
+
+    if(intake_time == '')
+    {
+      alert('Enter intake_time');
+      return false;
+    }
+    if(infant_safety == '')
+    {
+      alert('Enter infant_safety');
+      return false;
+    }
+
     $.ajax({
       url:"<?php echo base_url(); ?>medicines/insert",
       method:"POST",
@@ -156,7 +168,8 @@ $(document).ready(function(){
       }
     })
   });
-
+  
+//deleting record from table on click
   $(document).on('click', '.btn_delete', function(){
     var id = $(this).attr('id');
     if(confirm("Are you sure you want to delete this?"))

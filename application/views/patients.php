@@ -92,7 +92,7 @@ $(document).ready(function(){
       dataType:"JSON",
       success:function(data){
         var html = '<tr class="text-center">';
-        
+        //print data to table 
         for(var count = 0; count < data.length; count++)
         {
           html += '<tr class="text-center">';
@@ -101,7 +101,7 @@ $(document).ready(function(){
           html += '<td class="table_data" data-row_id="'+data[count].id+'" data-column_name="stage" contenteditable>'+data[count].stage+'</td>';
           html += '<td><button type="button" name="delete_btn" id="'+data[count].id+'" class="btn  btn_delete" ><span class="glyphicon glyphicon-remove"></span></button></td></tr>';
         }
-
+        //input field in the bottom row 
         html += '<td id="id" contenteditable"></td>';
         html += '<td id="gender" contenteditable placeholder="Enter gender"></td>';
         html += '<td id="stage" contenteditable placeholder="Enter stage"></td>';
@@ -113,16 +113,22 @@ $(document).ready(function(){
 
   load_data();
 
+// once click on the add button, add a new row to the table
   $(document).on('click', '#btn_add', function(){
     
     var gender = $('#gender').text();
     var stage = $('#stage').text();
-   
+   //check if input fields are empty
     if(gender == '')
     {
       alert('Enter gender');
       return false;
     }
+    if(stage == '')
+    {
+      alert('Enter stage');
+      return false;
+    } 
     $.ajax({
       url:"<?php echo base_url(); ?>patients/insert",
       method:"POST",
@@ -148,6 +154,7 @@ $(document).ready(function(){
     })
   });
 
+  //once click on the delete button, delete the row from the table
   $(document).on('click', '.btn_delete', function(){
     var id = $(this).attr('id');
     if(confirm("Are you sure you want to delete this?"))

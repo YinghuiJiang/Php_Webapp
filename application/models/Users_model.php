@@ -4,7 +4,8 @@
             parent::__construct();
             $this->load->database();
         }
- 
+        
+        //validate user login details
     	public function login($userid, $password){
                         $query = $this->db->get_where('users', array('userid'=>$userid, 'password'=>$password));
                         return $query->row_array();

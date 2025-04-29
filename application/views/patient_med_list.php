@@ -160,7 +160,7 @@
 				<li><a href="<?php echo base_url(); ?>index.php/patients"><span class="fa fa-info-circle"></span><span class="link"> Patient Data</span></a></li>
                                 <!-- Medication Data -->
 				<li><a href="<?php echo base_url(); ?>index.php/medicines"><span class="fa fa-info-circle"></span><span class="link"> Medication Data</span></a></li>
-				<!-- Define List -->
+				                <!-- Define List -->
 				<li><a href="<?php echo base_url(); ?>index.php/patient_med_list"><span class="fa fa-phone"></span><span class="link"> Define List</span></a></li>
                         </ul>
 		</div>
@@ -174,6 +174,8 @@
         <div class="card">
             <div class="card-header">Define List of Patients and Medications</div>
             <div class="card-body">
+
+                <!--filter options in the form-->
                 <form method="post" class="filter-form">
                     <div class="form-group">
                         <label for="gender">gender</label>
@@ -214,8 +216,10 @@
                 </form>
             </div>
         
+            <!-- Result Section -->
             <?php if (isset($results)): ?>
                 <?php if (!empty($results)): ?>
+                <!--display count of possible combinations-->
                 <div class="card-header">There are <?= count($results) ?> possible combinations</div>
                 <div class="card-body">
                         <div class="table-container">
@@ -231,7 +235,7 @@
                                 </thead>
                                 <tbody>
                                 
-                                  
+                                    <!--print result to table-->
                                     <?php foreach ($results as $row): ?>
                                     <tr>
                                         <td><?= $row['id'] ?></td>
@@ -245,6 +249,7 @@
                             </table>
                         </div>
                     </div>
+                <!--if there is no possible combination, send out alert-->
                 <?php else: ?>
                     <div class="card-body">
                         <div class="alert">No possible combinations!</div>
