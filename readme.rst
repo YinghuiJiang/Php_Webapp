@@ -110,5 +110,5 @@ For configuration, files are mainly in ```application/config```. Please look at 
 *******************
 Video demo
 *******************
-If you have trouble running this app locally or would like to see how it works, please check the full details via this short video on Youtube through this link. 
+If you have trouble running this app locally or would like to see how it works, please check the full details via this short video on Youtube through this link(https://youtu.be/AjylzFcd3OU). 
 
