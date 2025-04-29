@@ -72,7 +72,7 @@ Table 'users': 2 records. Columns include userid and password. See image below.
 
 .. image:: img/login_page.png
 
-
+Login sucess:
 .. image:: img/login_success.png
 
 
