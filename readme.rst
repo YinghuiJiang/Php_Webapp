@@ -15,7 +15,7 @@ Prerequisites:
 
 - macOS
 - PHP version 5.6 or newer (my version is PHP 7.3)
-- Codelgniter 3 (Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_of the CodeIgniter User Guide.)
+- Codelgniter 3 (Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`of the CodeIgniter User Guide.)
 - SQLite3
 
 To start this app demo locally, 
@@ -107,28 +107,8 @@ File Structure
 Database file path is ```/application/sqlite/data.db```. Main files are in ```application/models```, ```application/views``` and ```application/controllers```.  
 For configuration, files are mainly in ```application/config```. Please look at the file structure below.
 
-```
-.
-└── application
-    ├── views
-    |   ├── login_page.php
-    |   ├── home.php
-    |   ├── patients.php
-    |   ├── medicines.php
-    |   └── patient_med_list.php
-    ├── models
-    |   ├── Users_model.php
-    |   ├── Patients_model.php
-    |   ├── Medicines_model.php
-    |   └── Patient_med_list.php
-    ├── controllers
-    |   ├── User.php
-    |   ├── Patients.php
-    |   ├── Medicines.php
-    |   └── Patient_med_list.php
-    └── sqlite
-        └── data.db
-```
+.. image:: img/file_structure.png
+
 *******************
 Video demo
 *******************
