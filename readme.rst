@@ -80,24 +80,24 @@ Login sucess:
 **CRUD**: The tables display real-time data fetched from database. With AJAX, users can create new records by inputting information in the bottom, then clicking on add button without reloading the whole page. To delete a record, similarly,users only need to click on the delete button on each row. See images below.
 
 .. image:: img/Patient_display.png
-   :width:500
+   
 
 .. image:: img/Patient_created.png
-   :width:500
+  
 
 .. image:: img/Medicine_display.png
-   :width:500
+   
 
 .. image:: img/Medicine_created.png
-   :width:500
+   
 
 **Define List**: This is done by first querying two tables('patients' and 'medicines') with conditions from user end, then getting the cartesian product and printing all the possible combinations to the view. Addtionally, when it comes to infant, the result should exclude those medicines that are not infant-safe. Please check the following images for lists created for female adult patients with medicine intake at 8pm and male infant patients with intake at 8am.
 
 .. image:: img/List_female_adult_8pm.png
-   :width:500
+   
 
 .. image:: img/List_male_infant_8am.png
-   :width:500
+  
 
 **REST Api**: Controller manages all the http request and reponse via POST method. All the resources could be visited through a standard url.
 
