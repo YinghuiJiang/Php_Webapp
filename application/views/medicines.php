@@ -30,7 +30,42 @@
   </style>
 </head>
 <body>
-<h3 align="center">Medicine Information</h3><br />
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+	<div class="container-fluid">
+		<!-- Nav Header -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
+                        <span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+                        <a class="navbar-brand" href="<?php echo base_url(); ?>index.php/user/home"><span class="fa fa-home"></span><span class="link"> Home</span></a>
+		</div>
+		<!-- Nav Collapse -->
+		<div class="navbar-collapse collapse" id="collapse-1">
+			<!-- Nav Left -->
+			<ul class="nav navbar-nav">
+				
+                                <!-- Patient Data -->
+				<li><a href="<?php echo base_url(); ?>index.php/patients"><span class="fa fa-info-circle"></span><span class="link"> Patient Data</span></a></li>
+                                <!-- Medication Data -->
+				<li><a href="<?php echo base_url(); ?>index.php/medicines"><span class="fa fa-info-circle"></span><span class="link"> Medication Data</span></a></li>
+				<!-- Define List -->
+				<li><a href="<?php echo base_url(); ?>index.php/patient_med_list"><span class="fa fa-phone"></span><span class="link"> Define List</span></a></li>
+                        </ul>
+		</div>
+	</div>
+</nav>
+
+
+
+
+
+
+
+<h3 align="center" style="color:gray">Medication Information</h3><br />
   <div class="container box">
     
     <div class="table-responsive">
@@ -38,7 +73,7 @@
       <table class="table table-striped table-bordered table-hover " >
         <thead>
           <tr>
-            <th style="text-align:center">Med_ID</th>
+            <th style="text-align:center">Medication ID</th>
             <th style="text-align:center">Frequency</th>
             <th style="text-align:center">Intake Time</th>
             <th style="text-align:center">Infant Safety</th>
@@ -67,11 +102,11 @@ $(document).ready(function(){
         for(var count = 0; count < data.length; count++)
         {
           html += '<tr class="text-center">';
-          html += '<td class="table_data" data-row_id="'+data[count].id+'" data-column_name="id" contenteditable>'+data[count].id+'</td>';
+          html += '<td class="table_data" data-row_id="'+data[count].id+'" data-column_name="med_ID" contenteditable>'+data[count].med_ID+'</td>';
           html += '<td class="table_data" data-row_id="'+data[count].id+'" data-column_name="frequency" contenteditable>'+data[count].frequency+'</td>';
           html += '<td class="table_data" data-row_id="'+data[count].id+'" data-column_name="intake_time" contenteditable>'+data[count].intake_time+'</td>';
           html += '<td class="table_data" data-row_id="'+data[count].id+'" data-column_name="infant_safety" contenteditable>'+data[count].infant_safety+'</td>';
-          html += '<td><button type="button" name="delete_btn" id="'+data[count].id+'" class="btn  btn_delete" ><span class="glyphicon glyphicon-remove"></span></button></td></tr>';
+          html += '<td><button type="button" name="delete_btn" id="'+data[count].med_ID+'" class="btn  btn_delete" ><span class="glyphicon glyphicon-remove"></span></button></td></tr>';
         }
 
         html += '<td id="id" contenteditable"></td>';

@@ -1,5 +1,5 @@
 <?php
-class medicines_model extends CI_Model
+class Medicines_model extends CI_Model
 {
 	public function __construct(){
         //load database

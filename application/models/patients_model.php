@@ -1,5 +1,5 @@
 <?php
-class patients_model extends CI_Model
+class Patients_model extends CI_Model
 {
 	public function __construct(){
         //load database

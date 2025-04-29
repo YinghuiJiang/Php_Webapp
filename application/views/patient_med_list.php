@@ -16,7 +16,7 @@
             background-color: #eee;
             color: #333;
             line-height: 1.6;
-            padding: 20px;
+            
         }
         
         /* container */
@@ -230,6 +230,8 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                
+                                  
                                     <?php foreach ($results as $row): ?>
                                     <tr>
                                         <td><?= $row['id'] ?></td>

@@ -2,7 +2,7 @@
 <html>
 <head>
         <meta charset="utf-8">
-        <title>Login</title>
+        <title>Home</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
         <style>
         body
@@ -67,7 +67,7 @@
                                 <!-- Medication Data -->
 				<li><a href="<?php echo base_url(); ?>index.php/medicines"><span class="fa fa-info-circle"></span><span class="link"> Medication Data</span></a></li>
 				<!-- Define List -->
-				<li><a href="#"><span class="fa fa-phone"></span><span class="link"> Define List</span></a></li>
+				<li><a href="<?php echo base_url(); ?>index.php/patient_med_list"><span class="fa fa-phone"></span><span class="link"> Define List</span></a></li>
                         </ul>
 		</div>
 	</div>
@@ -99,7 +99,7 @@
                         <li><a href="<?php echo base_url(); ?>index.php/medicines" class="block">Medication Data</a></li>
                         <br>
                         <br>
-                        <li><a href="<?php echo base_url(); ?>index.php/medicines" class="block">Define List</a></li>
+                        <li><a href="<?php echo base_url(); ?>index.php/patient_med_list" class="block">Define List</a></li>
                     </ul>
                 </div>
                         
