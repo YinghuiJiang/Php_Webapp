@@ -52,20 +52,21 @@ Solution
 **Database**: In SQLite3, I setup a schema named 'data' which contains three tables: 'patients', 'medicines' and 'users'.
 For each table, I created some initial records.
 
-'patients': 10 records. Columns include id, gender and stage. See image below.
+Table 'patients': 10 records. Columns include id, gender and stage. See image below.
 
 .. image:: img/data_patients.png
-   :width: 600
-
-![image](https://github.com/YinghuiJiang/Php_Webapp/blob/e8149468a47a1e21b17d78adf05372d055978d63/img/data_patients.png)
+   :width: 350
 
 'medicines': 10 records. Columns include med_ID, frequency, intake_time and infant_safety. See image below.
 
-![image](https://raw.githubusercontent.com/YinghuiJiang/Php_Webapp/master/img/data_medicines.png）
+.. image:: img/data_medicines.png
+   :width: 350
+
 
 'users': 2 records. Columns include userid and password. See image below.
 
-![image](https://raw.githubusercontent.com/YinghuiJiang/Php_Webapp/master/img/data_users.png)
+.. image:: img/data_users.png
+   :width: 350
 
 **Login**: This is the default page. Only authenticated users can visit medical data. This login authentication is a module in Codelgniter framework that utilizes session library to verify authentication details.
 
