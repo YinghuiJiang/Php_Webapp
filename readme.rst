@@ -15,7 +15,7 @@ Prerequisites:
 
 - macOS
 - PHP version 5.6 or newer (my version is PHP 7.3)
-- Codelgniter 3 (Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`of the CodeIgniter User Guide.)
+- Codelgniter 3 (Please see the installation section <https://codeigniter.com/user_guide/installation/index.html> of the CodeIgniter User Guide.)
 - SQLite3
 
 To start this app demo locally, 
