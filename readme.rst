@@ -6,37 +6,46 @@ This repo contains sourcecode for a PHP web app demo using Codelgniter-AJAX-jQue
 MVC design pattern that decouples user-interface(View), data(Model) and controlling logic(Controller). This demo is used 
 to define patients, medications and their intake times. Main functions include CRUD operation over patients and medications, login authentication and
 define list of patients and their medicines intake.
+
+
 *******************
 Installation and Setup
 *******************
 
 - macOS
 - PHP version 5.6 or newer (my version is PHP 7.3)
-- Codelgniter 3 (Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.)
+- Codelgniter 3 (Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_of the CodeIgniter User Guide.)
 - SQLite3
 
 To start this app demo locally, 
+
 - git clone the repository
 - open terminal, enter the target folder
 - start the server and visit it via url: localhost:8000
 
-e. g. cd php_webapp
-      php -S localhost:8000
+For example,
 
+```
+      cd Php_Webapp
+      php -S localhost:8000
+```
 
 
 *******************
 Task
 *******************
+
 Tasks:
+
 -  create some patients and medications
 -  create a list of female adult patients and their medications for intake at 8 p.m.
 -  create a list of male infant patients and their medications for intake at 8 a.m.
+
 Optional:
 -  only selected users can access the list of patients
 -  create the list dynamically by selecting patients and intake times
 -  list can be accessed via an API
+
 *******************
 Solution
 *******************
@@ -55,7 +64,7 @@ For each table, I created some initial records.
 
 *Define List*: This is done by first querying two tables('patients' and 'medicines') with conditions from user end, and then getting the cartesian product. Addtionally, when it comes to infant, the result should exclude those medicines that are not infant-safe.
 
-*REST Api *: Controller manages all the http request and reponse via POST method. All the resources could be visited through a standard url.
+*REST Api*: Controller manages all the http request and reponse via POST method. All the resources could be visited through a standard url.
 
 
 *******************
