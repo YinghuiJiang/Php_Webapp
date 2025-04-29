@@ -54,6 +54,10 @@ For each table, I created some initial records.
 
 'patients': 10 records. Columns include id, gender and stage. See image below.
 
+<p>
+   <img src="/img/data_patients.png.png" width="220" height="240" /> 
+</p>
+
 ![image](https://github.com/YinghuiJiang/Php_Webapp/blob/e8149468a47a1e21b17d78adf05372d055978d63/img/data_patients.png)
 
 'medicines': 10 records. Columns include med_ID, frequency, intake_time and infant_safety. See image below.
