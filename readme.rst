@@ -107,6 +107,28 @@ File Structure
 Database file path is ```/application/sqlite/data.db```. Main files are in ```application/models```, ```application/views``` and ```application/controllers```.  
 For configuration, files are mainly in ```application/config```. Please look at the file structure below.
 
+```
+.
+└── application
+    ├── views
+    |   ├── login_page.php
+    |   ├── home.php
+    |   ├── patients.php
+    |   ├── medicines.php
+    |   └── patient_med_list.php
+    ├── models
+    |   ├── Users_model.php
+    |   ├── Patients_model.php
+    |   ├── Medicines_model.php
+    |   └── Patient_med_list.php
+    ├── controllers
+    |   ├── User.php
+    |   ├── Patients.php
+    |   ├── Medicines.php
+    |   └── Patient_med_list.php
+    └── sqlite
+        └── data.db
+```
 *******************
 Video demo
 *******************
