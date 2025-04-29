@@ -24,10 +24,10 @@ To start this app demo locally,
 - open terminal, enter the target folder
 - start the server and visit it via url: localhost:8000
 
-            ```shell
+            ``
             cd Php_Webapp
             php -S localhost:8000
-            ```
+            ``
 
 
 *******************
