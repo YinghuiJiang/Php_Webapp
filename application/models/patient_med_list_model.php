@@ -17,8 +17,16 @@ class Patient_med_list_model extends CI_Model
 
 		//get medications with condition from table 'medicines'
 		$this->db->where('intake_time', $intake_time);
-        $medicines = $this->db->get('medicines')->result_array();
-
+        
+        //if it's infant, remove the medicines that are not safe for infants
+        if ($stage == 'infant') {
+            $this->db->where('infant_safety','yes');
+            $medicines = $this->db->get('medicines')->result_array();
+        }
+        else{
+            $medicines = $this->db->get('medicines')->result_array();
+        }
+        
 		//get all combinations of patients and medications
 		$results = array();
         foreach ($patients as $patient) {
