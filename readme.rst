@@ -54,15 +54,15 @@ For each table, I created some initial records.
 
 'patients': 10 records. Columns include id, gender and stage. See image below.
 
-![image](https://github.com/YinghuiJiang/Php_Webapp/raw/main/img/data_patients.png.png)
+![image](/img/data_patients.png)
 
 'medicines': 10 records. Columns include med_ID, frequency, intake_time and infant_safety. See image below.
 
-![image](https://github.com/YinghuiJiang/Php_Webapp/raw/main/img/data_medicines.png）
+![image](/img/data_medicines.png）
 
 'users': 2 records. Columns include userid and password. See image below.
 
-![image](https://github.com/YinghuiJiang/Php_Webapp/raw/main/img/data_users.png)
+![image](/img/data_users.png)
 
 **Login**: This is the default page. Only authenticated users can visit medical data. This login authentication is a module in Codelgniter framework that utilizes session library to verify authentication details.
 
