@@ -52,7 +52,7 @@
                                 <!-- Medication Data -->
 				<li><a href="<?php echo base_url(); ?>index.php/medicines"><span class="fa fa-info-circle"></span><span class="link"> Medication Data</span></a></li>
 				<!-- Define List -->
-				<li><a href="#"><span class="fa fa-phone"></span><span class="link"> Define List</span></a></li>
+				<li><a href="<?php echo base_url(); ?>index.php/patient_med_list"><span class="fa fa-phone"></span><span class="link"> Define List</span></a></li>
                         </ul>
 		</div>
 	</div>
